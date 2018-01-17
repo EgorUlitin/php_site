@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+
+/*.card {
+	height: 20em;
+}*/
+
+.bg-header {
+ 	background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-1 {
+	margin-top: 15em;
+	color: #fff;
+}
+
+.title-1 small {
+	color: #fff;
+}
+
+.slider-size {
+	margin-top: 1em;
+}
+
+.btn1 {
+	margin-top: 5em;
+}
+
+.jt {
+	margin-top: 5em;
+}
+
+.bg-infoblock {
+	background-color: #fff;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-content: space-between;
+	margin-top: 5em;
+}
+
+.flex-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+}
+
+.flex1 {
+	flex: 1;
+	padding: 1em;
+
+}
+
+.flex2 {
+	flex-grow: 1;
+	padding: 1em;
+}
+
+.flex3 {
+	flex-grow: 0;
+	padding: 1em;
+	align-self: center;
+	margin-left: 220px;
+}
+
+.reviews1 {
+	margin-top: 5em;
+}
+.reviews-img {
+	padding-top: 3em;
+}
+
+.infoblock {
+	margin-bottom: 5em;
+}
+
+.btn-3 {
+	margin-top: 5em;
+}
+
+.btn-comment {
+	margin-bottom: 5em;
+}
+
+.bg-comment {
+	background-image: url(../img/bg-reviews.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-1 {
+	background: url(../img/bg-banner.jpg) no-repeat center top / cover;
+	height: 23em;
+	margin-top: 5em;
+	color: #fff;
+}
+
+.title-banner-1 {
+	margin-top: 3em;
+}
+
+.grid-banner {
+	margin-top: 5em;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);	
+}
+
+.grid-banner p {
+	margin-top: 1em;
+}
+
+.footer {
+	background-color: #2C8AB1;
+	color: #fff;
+}
+
+.fa {
+	font-size: 3em;
+	margin-left: 1em;
+}
+
+.title-2 {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.footer a {
+	color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+	.flex2 {
+		display: none;
+	}
+	.flex-footer {
+		
+	}
+	.flex3 {
+		/*margin-left: 8em;
+		padding: 5em;*/
+	}
+}
+
+
+
