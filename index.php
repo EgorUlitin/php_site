@@ -1,4 +1,31 @@
-<!DOCTYPE html><html>
+<?php
+	
+	$data = $_POST;
+
+var_dump($data);
+
+    $name = $data['name'];
+    $login = $data['login'];
+    $email = $data['email']
+
+	function signup($str) {
+		if (isset($str)) {
+			$input_text = trim($str);
+			$input_text = htmlspecialchars($input_text);
+			$input_text = stripslashes($input_text);
+			$input_text = strip_tags($input_text);
+			return $input_text;
+		} else {
+			echo "Введите корректные данные!";
+		}
+	}
+	
+
+
+?>
+
+
+ <!DOCTYPE html><html>
     <head>
     	<meta charset="utf-8">
     	<title>Горящие туры</title>
@@ -194,14 +221,14 @@
 					        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
 					      </div>
 					      <div class="modal-body">
-					      	<form id="reg_form" action="/signup.php" method="POST" role="form">
+					      	<form id="reg_form" action="index.php" method="POST" role="form">
 								<div class="form-group">
-							    	<label for="">Ваше имя*</label>
-							    	<input type="name" name="name" class="form-control" id="" placeholder="Ваше имя">
+							    	<label for="name">Ваше имя*</label>
+							    	<input type="name" name="name" class="form-control" id="name" placeholder="Ваше имя">
 							  	</div>
 							  	<div class="form-group">
-							    	<label for="">Ваш логин*</label>
-							    	<input type="name" name="login" class="form-control" id="" placeholder="Ваше имя">
+							    	<label for="login">Ваш логин*</label>
+							    	<input type="name" name="login" class="form-control" id="login" placeholder="Ваше имя">
 							  	</div>
 							  	<div class="form-group">
 								    <label for="">Ваш email*</label>
@@ -218,8 +245,8 @@
 							</form>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-					        <button type="button" name="signup" class="btn btn-primary">Подтвердить</button>
+					        <button form="reg_form" type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+					        <button form="reg_form" type="submit" name="signup" class="btn btn-primary">Подтвердить</button>
 					      </div>
 					    </div>
 					</div>
