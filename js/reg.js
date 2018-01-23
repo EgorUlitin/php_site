@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	'use strict';
-	$('form#myModal').submit(
+	$('form#reg_form').submit(
 		function (event) {
 			event.preventDefault();
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 			user_data = 'user_data=' + JSON.stringify(user_data); 
 			$.ajax({
-				url: '../models/reguser.php',
+				url: '../model/reg_user.php',
 				type: 'post',
 				data: user_data,
 				success: function (response) {
