@@ -2,7 +2,7 @@
 	
 	$data = $_POST;
 
-var_dump($data);
+	var_dump($data);
 
     $name = $data['name'];
     $login = $data['login'];

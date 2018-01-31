@@ -13,5 +13,8 @@ function getDataFromFileShort($filename) {
     return file_get_contents($filename);
 }
 function addDataToFile($data, $filename) {
-    return file_put_contents($filename, serialize($data), FILE_APPEND);
+    $from_file = file_get_contents($filename);
+    $from_file = unserialize($from_file);
+    $from_file[] = $data;
+    return file_put_contents($filename, serialize($from_file));
 }
