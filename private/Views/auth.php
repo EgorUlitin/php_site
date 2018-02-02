@@ -1,4 +1,4 @@
-<?php include "header.php";?>
+
 
 <div class="registform container">
 	<form id="auth" class="form-horizontal" role="form">
@@ -31,4 +31,3 @@
 </form>
 </div>
 <?php include "modalauth.php";?>
-<?php include "footer.php";?>

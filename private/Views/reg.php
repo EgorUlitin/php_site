@@ -1,9 +1,9 @@
 
 
-<?php require "header.php";?>
+
 
 <div class="registform container">
-    <form id="reg_form" action="index.php" method="POST" class="form-horizontal " role="form">
+    <form id="reg_form" class="form-horizontal " role="form">
   <div class="form-group">
     <label for="email" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-10">
@@ -42,4 +42,4 @@
 </form>
 </div>
 <?php include "modalreg.php";?>
-<?php include "footer.php";?>
+

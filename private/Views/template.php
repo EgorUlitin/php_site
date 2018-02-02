@@ -4,7 +4,8 @@
     	<title><? echo $title; ?></title>
     	<meta name="viewport" content="width=device-width; initial-scale=1.0">
     	<link rel="stylesheet" href="/static/css/bootstrap.css">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.."></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/static/js/jquery-3.2.1.js"></script>
     	<script src="/static/js/bootstrap.js"></script>
     	<link rel="stylesheet" href="/static/css/font-awesome.min.css">
     	<link rel="stylesheet" href="/static/css/main.css">
@@ -22,7 +23,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a href="#" class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                                <a href="#" class="navbar-brand" href="#"><img src="/img/logo.png" alt=""></a>
                             </div>
                             <div class="collapse navbar-collapse" id="responsive-menu">
                                 <ul class="nav navbar-nav navbar-right">
@@ -38,8 +39,8 @@
                                         <li><a href="#">Туры по России</a></li>
                                       </ul>
                                     </li>
-                                    <li><a href="reg.php">Регистрация</a></li>
-                                    <li><a href="auth.php">Авторизация</a></li>
+                                    <li><a href="/reg">Регистрация</a></li>
+                                    <li><a href="/auth">Авторизация</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -76,7 +77,6 @@
     <?php include "modalreg.php"; ?>
     <script src="/static/js/reg.js"></script>
     <script src="/static/js/auth.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/static/js/bootstrap.js"></script>
     </body>
 </html>

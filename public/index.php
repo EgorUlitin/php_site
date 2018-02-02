@@ -5,6 +5,7 @@ function runController() {
         PHP_URL_PATH);
     $action = trim($uri, '/') ? : 'index';
     $action = $action . 'Action';
+    #var_dump($action);
     $action();
 }
 runController();

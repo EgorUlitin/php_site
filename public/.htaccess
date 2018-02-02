@@ -1,0 +1,10 @@
+AddDefaultCharset Off
+<IfModule mod_rewrite.c>
+# активация модуля
+RewriteEngine On
+# если файл не существует или не является дирректорией
+    RewriteCond %{REQUEST_FILENAME}% !-f
+    RewriteCond %{REQUEST_FILENAME}% !-d
+    # QSA - строка запроса ($_GET)
+    RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>

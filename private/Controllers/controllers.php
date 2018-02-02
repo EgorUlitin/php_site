@@ -7,24 +7,34 @@ function indexAction() {
     ]);
 }
 function regAction() {
-    include "../private/Models/shows_model.php";
     $title = 'Регистрация';
     $view_filename = 'reg.php';
-    $shows = getAllShows();
     generateResponse($view_filename, [
-        'title' => $title,
-        'shows' => $shows
+        'title' => $title
     ]);
 }
 
 function authAction() {
     $title = 'Зарегистрироваться';
     $view_filename = 'auth.php';
-    $shows = getAllShows();
+    
     generateResponse($view_filename, [
         'title' => $title,
-        'shows' => $shows
     ]);
+}
+
+function reg_userAction() {
+    include "file_model.php";
+    include "validator_model.php";
+    $post = $_POST;
+    $user_data = check_array_data(json_decode($post['user_data'], true));
+//    $user_data['state'] = 'user';
+    if (!$user_data or (addDataToFile($user_data, '../private/files/users_lst.txt') === false)) {
+        echo 'not add';
+        return;
+    }
+    echo 'user add';
+    return;
 }
 
 function account_authAction() {
