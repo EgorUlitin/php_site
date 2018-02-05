@@ -1,5 +1,9 @@
 <?php
-function getDataFromFile($filename) {
+namespace Vendor\Models;
+
+class GetData
+{
+   function getDataFromFile($filename) {
     $fp = fopen($filename, "r");
     if ($fp) {
         while (($data = fread($fp, 4096)) !== false) {
@@ -8,13 +12,14 @@ function getDataFromFile($filename) {
         fclose($fp);
     }
     return false;
-}
-function getDataFromFileShort($filename) {
+    }
+    function getDataFromFileShort($filename) {
     return file_get_contents($filename);
-}
-function addDataToFile($data, $filename) {
-    $from_file = file_get_contents($filename);
-    $from_file = unserialize($from_file);
-    $from_file[] = $data;
+    }
+    function addDataToFile($data, $filename) {
+        $from_file = file_get_contents($filename);
+        $from_file = unserialize($from_file);
+        $from_file[] = $data;
     return file_put_contents($filename, serialize($from_file));
+    } 
 }

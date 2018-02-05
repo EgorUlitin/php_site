@@ -1,0 +1,15 @@
+{
+    "name": "macintosh/phpsite",
+    "authors": [
+        {
+            "name": "egorulitin",
+            "email": "egorulitin@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Vendor\\": "private/"
+      }
+    },
+    "require": {}
+}

@@ -1,11 +1,23 @@
 <?php
+
+namespace Vendor\Controllers;
+
 session_start();
-include "file_model.php";
-include "validator_model.php";
-if (isset($_POST['auth_data'])) {
-    authUser();
+
+use Vendor\Models\Validator;
+
+class Auth_user
+{
+	function __contruct
+	{
+		if (isset($_POST['auth_data'])) {
+    	authUser();
+		}
+		if ($_GET['logout']) {
+    	session_unset();
+    	header("Location:/");
+		}
+	}
 }
-if ($_GET['logout']) {
-    session_unset();
-    header("Location:/");
-}
+
+

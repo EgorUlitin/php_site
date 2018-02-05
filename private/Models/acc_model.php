@@ -1,6 +1,5 @@
 <?php
-include "file_model.php";
-include "validator_model.php";
+use Vendor\Models\Validator;
 function getAllUsers() {
     $users = getDataFromFileShort("../files/users_lst.txt");
     return unserialize($users);

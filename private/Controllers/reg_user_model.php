@@ -1,6 +1,7 @@
 <?php
-include "file_model.php";
-include "validator_model.php";
+
+use Vendor\Models\Validator;
+
 function reg_user() {
     $post = $_POST;
     $user_data = check_array_data(json_decode($post['user_data'], true));
